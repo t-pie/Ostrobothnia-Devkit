@@ -1,5 +1,4 @@
-# Ostrobothnia-Godgun
-A NATO Comabitble Godgun for Live Simulation
+# Ostrobothnia Devkit
 
 
 ## BOM
@@ -10,6 +9,7 @@ A NATO Comabitble Godgun for Live Simulation
 -   Unknown IR LED
 -  Unknown MOSFET
 -  Unknown Trigger
+-  Unkown ir receiver (without carrier frequency)
 
 
 ## TODO
