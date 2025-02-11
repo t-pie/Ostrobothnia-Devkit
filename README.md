@@ -1,40 +1,26 @@
 # Ostrobothnia Devkit
 
 
-## BOM
-
-FPGA + ESP32 Integration
-	•	ESP32 (main controller)
-	•	Sends bitstream to FPGA via SPI
-	•	Handles dynamic configuration
-	•	Allows wireless updates via Wi-Fi/Bluetooth
-	•	Lattice iCE40UP5K FPGA
-	•	Handles precise IR pulse generation
-	•	Processes incoming IR signals
+## Components
+ESP32 + FPGA Integration
+-	ESP32 (main controller) → Sends bitstream via SPI, enables wireless updates.
+-	iCE40UP5K FPGA → Generates IR pulses, processes received signals.
 
 IR Transmission (Emitter)
-	•	IR LED (TSAL6200, SFH 4547)
-	•	High-speed IR LED for transmitting pulses
-	•	MOSFET (BS170, IRLZ34N)
-	•	Drives IR LED at high speed
-	•	Current-limiting resistor (~100Ω)
-	•	Protects IR LED
+-	IR LED (TSAL6200, SFH 4547) for high-speed IR output.
+-	MOSFET (BS170, IRLZ34N) to drive the IR LED efficiently.
+-	Resistor (~100Ω) to limit current.
 
 IR Reception (Receiver)
-	•	Photodiode (VBPW34FASR, SFH 213 FA)
-	•	High-speed IR light detection
-	•	Transimpedance amplifier (OPA354, AD8606)
-	•	Converts photodiode current to voltage
-	•	Optional: Phototransistor (TEFT4300, QSD123)
-	•	Simpler, but slightly slower alternative
+-	Photodiode (VBPW34FASR) for fast IR detection.
+-	Transimpedance amplifier (OPA354) to amplify the signal.
+-	Optional: Phototransistor (TEFT4300) for a simpler alternative.
 
 Debugging & Power
-	•	SPI Flash (W25Q128) (for optional fast FPGA boot)
-	•	OLED Display (or basic LED indicators)
-	•	Show status of FPGA & ESP32
-	•	USB-C for power & programming
-	•	JTAG Header (for direct FPGA programming)
-
+-	SPI Flash (W25Q128) for fast FPGA boot (optional).
+-	OLED display / LEDs for status indicators.
+-	USB-C for power & programming.
+-	JTAG Header (optional) for direct FPGA programming.
 
 ## TODO
 
