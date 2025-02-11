@@ -18,3 +18,5 @@ A NATO Comabitble Godgun for Live Simulation
 -  finish bom
 -  ????
 -  profit
+
+Link to the Main Repo [Ostrobothnia](https://github.com/t-pie/Ostrobothnia)
